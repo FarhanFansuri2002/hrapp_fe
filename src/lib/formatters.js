@@ -1,0 +1,7 @@
+export function formatDate(value) {
+  return new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(value))
+}
+
+export function formatNumber(value) {
+  return new Intl.NumberFormat('id-ID').format(value)
+}

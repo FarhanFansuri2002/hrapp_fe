@@ -1,0 +1,7 @@
+export const candidates = [
+  { name: 'Nadia Putri', role: 'Product Designer', stage: 'Review', initials: 'NP', color: '#f2b8aa', email: 'nadia.putri@email.com', location: 'Jakarta, Indonesia', score: 94, applied: '2 hari lalu', tags: ['Figma', 'Research', 'SaaS'], note: 'Portfolio sangat kuat di product thinking dan sistem desain.' },
+  { name: 'Raka Pratama', role: 'Frontend Engineer', stage: 'Interview', initials: 'RP', color: '#b8d6c7', email: 'raka.pratama@email.com', location: 'Bandung, Indonesia', score: 89, applied: '3 hari lalu', tags: ['React', 'TypeScript', 'Next.js'], note: 'Berpengalaman membangun produk B2B dengan tim kecil.' },
+  { name: 'Salsa Maharani', role: 'Content Strategist', stage: 'New', initials: 'SM', color: '#c5c6e8', email: 'salsa.maharani@email.com', location: 'Surabaya, Indonesia', score: 87, applied: '5 jam lalu', tags: ['Content', 'SEO', 'Brand'], note: 'Menunjukkan kemampuan storytelling yang konsisten.' },
+  { name: 'Dimas Arya', role: 'Product Manager', stage: 'Offer', initials: 'DA', color: '#f2d28c', email: 'dimas.arya@email.com', location: 'Jakarta, Indonesia', score: 96, applied: '6 hari lalu', tags: ['Strategy', 'Agile', 'B2B'], note: 'Kandidat pilihan hiring manager untuk tahap final.' },
+  { name: 'Alya Rahma', role: 'People Operations', stage: 'Review', initials: 'AR', color: '#e8b7cc', email: 'alya.rahma@email.com', location: 'Tangerang, Indonesia', score: 91, applied: '1 hari lalu', tags: ['People', 'Culture', 'HRIS'], note: 'Pengalaman membangun program engagement dari nol.' },
+]

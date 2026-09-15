@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #24313b;
+  background: #f7f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+* { box-sizing: border-box; }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-rise { animation: rise-in 500ms ease both; }
+.delay-1 { animation-delay: 80ms; }
+.delay-2 { animation-delay: 160ms; }
+.delay-3 { animation-delay: 240ms; }
