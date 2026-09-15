@@ -1,0 +1,7 @@
+import { Bell, ChevronDown, Menu } from 'lucide-react'
+
+function Navbar({ onMenu, onNotify }) {
+  return <header className="flex h-19 items-center justify-between border-b border-[#e7e3da] bg-[#fbfaf6]/90 px-5 backdrop-blur md:px-10"><div className="flex items-center gap-3"><button type="button" className="lg:hidden" onClick={onMenu} aria-label="Buka navigasi"><Menu size={20} /></button><div><p className="text-xs font-semibold text-[#959995]">Senin, 14 September 2026</p><h1 className="font-['Manrope'] text-xl font-extrabold tracking-tight">Selamat pagi, Aulia <span className="text-[#eb765c]">.</span></h1></div></div><div className="flex items-center gap-2 md:gap-4"><button type="button" className="relative rounded-xl p-2 text-[#7d8585] hover:bg-[#f0efe9]" onClick={onNotify} aria-label="Notifikasi"><Bell size={19} strokeWidth={1.8} /><span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-[#eb765c]" /></button><div className="h-7 w-px bg-[#e4e1d9]" /><button type="button" className="flex items-center gap-2"><div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d8c6b4] text-xs font-bold text-[#705846]">AS</div><span className="hidden text-sm font-bold md:block">Aulia Sari</span><ChevronDown size={14} className="hidden text-[#9a9c9c] md:block" /></button></div></header>
+}
+
+export default Navbar
