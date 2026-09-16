@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export function useHrData(loader, initialValue = []) {
   const [data, setData] = useState(initialValue)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  useEffect(() => {
+  const reload = useCallback(() => {
     let active = true
     setLoading(true)
+    setError(null)
 
     loader()
       .then((result) => {
@@ -23,5 +24,7 @@ export function useHrData(loader, initialValue = []) {
     return () => { active = false }
   }, [loader])
 
-  return { data, loading, error }
+  useEffect(() => reload(), [reload])
+
+  return { data, loading, error, reload }
 }

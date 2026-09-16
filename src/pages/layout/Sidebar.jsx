@@ -1,6 +1,6 @@
-import { BriefcaseBusiness, CalendarDays, ChevronRight, FileText, LayoutDashboard, Settings, Sparkles, Users } from 'lucide-react'
+import { BriefcaseBusiness, CalendarCheck, CalendarDays, ChevronRight, FileText, LayoutDashboard, Settings, Sparkles, Users, WalletCards } from 'lucide-react'
 
-const workspaceItems = [['Ringkasan', LayoutDashboard], ['Kandidat', Users], ['Lowongan', BriefcaseBusiness], ['Kalender', CalendarDays]]
+const workspaceItems = [['Ringkasan', LayoutDashboard], ['Karyawan', Users], ['Kehadiran', CalendarCheck], ['Cuti', CalendarDays], ['Penggajian', WalletCards], ['Rekrutmen', BriefcaseBusiness]]
 const manageItems = [['Laporan', FileText], ['Pengaturan', Settings]]
 
 function NavItem({ item, activeNav, onNavigate }) {
